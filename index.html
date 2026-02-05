@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <a href="experimental-typography.html">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Communication Designer Portfolio</title>
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- ================= CUSTOM STYLES ================= -->
+  
+</head>
+<style>
+  /* Primary button (View Work) */
+.btn-primary {
+  --bs-btn-bg: #14131d;
+  --bs-btn-border-color: #14131d;
+  --bs-btn-color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-lavender);
+  border-color: var(--accent-lavender);
+  color: #111827;
+}
+
+/* Secondary button (Get in Touch) */
+.btn-outline-primary {
+  --bs-btn-color: #14131d;
+  --bs-btn-border-color: #14131d;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--accent-lavender);
+  border-color: var(--accent-lavender);
+  color: #111827;
+}
+
+</style>
+
+
+
+<body class="bg-body text-body"> 
+
+  
+  <!-- ================= PROJECT MODAL ================= -->
+<div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImage" class="img-fluid rounded mb-3" alt="">
+        <p id="modalDescription" class="mb-0"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg sticky-top custom-navbar border-bottom">
+
+  <div class="container">
+    <a class="navbar-brand fw-semibold" href="#">Meenakshi Suresh Kumar</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="btn btn-sm btn-outline-primary ms-lg-3" id="themeToggle">
+        <i class="bi bi-moon"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="section-padding">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold">HELLO! I am Meenakshi Suresh Kumar</h1>
+        <p class="lead mt-3">
+          Welcome to my design portfolio where you can take a look at my work and skills as a Visual communication design student.
+        </p>
+       
+        <div class="mt-4">
+          <a href="#work" class="btn btn-primary me-2">View Work</a>
+          <a href="#contact" class="btn btn-outline-secondary">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <img
+          src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d"
+          class="img-fluid rounded"
+          alt="Abstract design placeholder">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+ <section id="about" class="section-padding dark-section">
+
+ <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h2 class="fw-semibold">ABOUT ME </h2>
+      
+      </div>
+      <div class="col-lg-8 text-start">
+
+
+        <p>
+          I am a Visual communication design student who loves to turn ideas into visual 
+          stories. I am especially drawn to typography, illustration, user-centered
+           design, layout and concept-driven design that balances aesthetics with meaning.<br>
+          
+           
+        </p>
+      
+      
+        <p>
+          I am currently exploring different design disciplines and building a strong 
+           foundation for future collaborations and professional practice.
+        </p>
+        <p>
+          Feel free to explore my portfolio and reach out if you'd like to connect!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section-padding section-dark">
+  <div class="container">
+
+    <h2 class="fw-semibold mb-5 text-center">SKILLS & TOOLS</h2>
+
+
+    <!-- ================= DESIGN SKILLS ================= -->
+    <div class="mb-5">
+    <h5 class="fw-semibold mb-3 text-center">Design Skills</h5>
+
+      <div class="d-flex flex-wrap gap-3 justify-content-center">
+
+        <div class="skill-item">Typography</div>
+        <div class="skill-item">Illustration</div>
+        <div class="skill-item">Character Design</div>
+        <div class="skill-item">Branding & Identity</div>
+        <div class="skill-item">UI / UX</div>
+      </div>
+    </div>
+
+    <!-- ================= SOFTWARE SKILLS ================= -->
+    <div>
+     <h5 class="fw-semibold mb-3 text-center">Software Skills</h5>
+
+   <div class="d-flex flex-wrap gap-3 justify-content-center">
+
+        <div class="skill-item">Adobe Illustrator</div>
+        <div class="skill-item">Adobe Photoshop</div>
+        <div class="skill-item">Adobe InDesign</div>
+        <div class="skill-item">Fresco</div>
+        <div class="skill-item">Figma</div>
+        <div class="skill-item">HTML</div>
+        <div class="skill-item">CSS</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= WORK ================= -->
+
+<section id="work" class="section-padding dark-section">
+  <div class="container">
+
+    <h2 class="fw-semibold mb-4 text-center">MY WORK</h2>
+
+    <div class="row g-4">
+
+      <!-- 1. Experimental Typography -->
+      <div class="col-md-6 col-lg-4">
+        <a href="experimental-typography.html" class="text-decoration-none">
+          <div class="card h-100">
+            <div class="ratio ratio-4x3">
+              <img
+                src="Screenshot1.png"
+                class="card-img-top"
+                alt="Experimental Typography">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Experimental Typography</h6>
+              <p class="small text-secondary mb-0">
+                Typography-led long-form design
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 2. Graphic Novel -->
+      <div class="col-md-6 col-lg-4">
+        <a href="graphicNovel.html" class="text-decoration-none">
+          <div class="card h-100">
+            <div class="ratio ratio-4x3">
+              <img
+                src="Screenshot2.png"
+                class="card-img-top"
+                alt="Graphic Novel on Big Bill">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Graphic Novel on Big Bill</h6>
+              <p class="small text-secondary mb-0">
+                Illustrated graphic novel inspired by Satyajit Ray
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 3. Character Design -->
+      <div class="col-md-6 col-lg-4">
+        <a href="characterDesign.html" class="text-decoration-none">
+          <div class="card h-100">
+            <div class="ratio ratio-4x3">
+              <img
+                src="Screenshot6.png"
+                class="card-img-top"
+                alt="Character Design">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Character Design Based On Moth</h6>
+              <p class="small text-secondary mb-0">
+                System-based branding
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 4. Booklet on Neville Brody -->
+      <div class="col-md-6 col-lg-4">
+        <a href="nevilebrody.html" class="text-decoration-none">
+          <div class="card h-100">
+            <div class="ratio ratio-4x3">
+              <img
+                src="Mag.1.png"
+                class="card-img-top"
+                alt="Booklet on Neville Brody">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Booklet on Neville Brody</h6>
+              <p class="small text-secondary mb-0">
+                Clarity through structure
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 5. Onboarding -->
+      <div class="col-md-6 col-lg-4">
+        <a href="onboarding.html" class="text-decoration-none">
+          <div class="card h-100">
+            <div class="ratio ratio-4x3">
+              <img
+                src="Screenshot5.png"
+                class="card-img-top"
+                alt="Onboarding Design">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Onboarding</h6>
+              <p class="small text-secondary mb-0">
+                Type & contrast exploration
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 6. Extra Work -->
+      <div class="col-md-6 col-lg-4">
+        <a href="extraWork.html" class="text-decoration-none">
+          <div class="card h-100">
+            <div class="ratio ratio-4x3">
+              <img
+                src="Screenshot3.png"
+                class="card-img-top"
+                alt="Extra Work">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Extra Work</h6>
+              <p class="small text-secondary mb-0">
+                Research-driven design
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- ================= PROCESS ================= -->
+<section id="process" class="section-padding">
+  <div class="container">
+    <h2 class="fw-semibold mb-4 text-center">MY CV</h2>
+
+
+   
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section-padding dark-section">
+  <div class="container">
+    <h2 class="fw-semibold mb-3 text-center">Contact</h2>
+
+    <!-- THIS IS THE LINE THAT WAS REMOVED — NOW RESTORED -->
+    <p class="text-secondary text-center mb-4">
+      Available for freelance, full-time opportunities, or a quick chat about design.
+    </p>
+
+    <!-- ICONS -->
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      
+      <!-- Email -->
+      <a
+        href="mailto:meenaksureshkumar2019@gmail.com"
+        class="contact-icon"
+        aria-label="Email"
+      >
+        <i class="bi bi-envelope-fill"></i>
+      </a>
+
+      <!-- LinkedIn -->
+      <a
+        href="https://www.linkedin.com/"
+        target="_blank"
+        class="contact-icon"
+        aria-label="LinkedIn"
+      >
+        <i class="bi bi-linkedin"></i>
+      </a>
+
+      <!-- Behance -->
+      <a
+        href="https://www.behance.net/"
+        target="_blank"
+        class="contact-icon"
+        aria-label="Behance"
+      >
+        <i class="bi bi-behance"></i>
+      </a>
+
+    </div>
+  </div>
+</section>
+<footer class="py-4 border-top">
+  <div class="container text-center small text-secondary">
+    Meenakshi Suresh Kumar 2026. All rights reserved.
+  </div>
+</footer>
+
+
+
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const projectModal = document.getElementById('projectModal');
+
+  projectModal.addEventListener('show.bs.modal', function (event) {
+    const img = event.relatedTarget;
+    document.getElementById('modalTitle').textContent = img.dataset.title;
+    document.getElementById('modalDescription').textContent = img.dataset.description;
+    document.getElementById('modalImage').src = img.src;
+    document.getElementById('modalImage').alt = img.alt;
+  });
+</script>
+
+
+<!-- ================= DARK MODE SCRIPT ================= -->
+<script>
+  const toggle = document.getElementById('themeToggle');
+  const html = document.documentElement;
+
+  toggle.addEventListener('click', () => {
+    const currentTheme = html.getAttribute('data-bs-theme');
+    html.setAttribute(
+      'data-bs-theme',
+      currentTheme === 'dark' ? 'light' : 'dark'
+    );
+  });
+</script>
+
+</body>
+</html>

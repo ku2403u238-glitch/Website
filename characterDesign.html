@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Character Design</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Same styles as home -->
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<style>
+  .final-img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  /* Prevent overflow & weird scaling */
+  max-width: 100%;
+  object-fit: contain;
+
+  /* Visual polish */
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+.final-img {
+  background: #b2aafe;
+  padding: 16px;
+}
+
+
+</style>
+
+<body class="bg-body text-body">
+
+<!-- NAVBAR -->
+<nav class="navbar sticky-top custom-navbar">
+  <div class="container">
+    <a class="navbar-brand fw-semibold" href="../index.html">
+      ← Back to Home
+    </a>
+
+    <button class="btn btn-sm btn-outline-primary" id="themeToggle">
+      <i class="bi bi-moon"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="section-padding dark-section text-center">
+  <div class="container">
+    <h1 class="fw-bold display-6 mb-3">
+      Character Design Based On Moth
+    </h1>
+    <p class="text-secondary">
+      This project explores my interpretation of the moth through a humanistic type family.
+    </p>
+
+   
+  </div>
+</section>
+
+
+<!-- DESIGN PROCESS -->
+<section class="section-padding dark-section">
+  <div class="container">
+
+    <h2 class="fw-semibold text-center mb-5">Research & Ideation Phase</h2>
+
+    <!-- 2 GIF ROW -->
+    <div class="row g-4 justify-content-center">
+
+      <!-- RESEARCH -->
+      <div class="col-12 col-md-6">
+        <div class="process-card text-center">
+          <div class="process-media">
+            <img src="gif3.gif" alt="Character research process">
+          </div>
+          <p class="process-caption mt-3">
+            Research & visual references for character inspiration
+          </p>
+        </div>
+      </div>
+
+      <!-- SKETCH & IDEATION -->
+      <div class="col-12 col-md-6">
+        <div class="process-card text-center">
+          <div class="process-media">
+            <img src="gif5.gif" alt="Sketch and ideation process">
+          </div>
+          <p class="process-caption mt-3">
+            Sketching, ideation, and exploring character forms
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CENTERED PARAGRAPH -->
+    <p class="process-journey text-center mt-5">
+      The character design process began with research and visual references,
+      followed by sketching and ideation to explore personality, form, and
+      expression.
+    </p>
+
+  </div>
+</section>
+
+
+
+
+<!-- FINAL OUTCOME -->
+<section class="section-padding">
+  <div class="container">
+    <h2 class="fw-semibold mb-5 text-center">Final Characters</h2>
+
+    <div class="row g-5">
+
+      <!-- ROW 1 -->
+      <div class="col-12 col-md-6">
+        <img src="moth1.jpg" class="final-img" alt="Final character design 1">
+      </div>
+
+      <div class="col-12 col-md-6">
+        <img src="Screenshot6.png" class="final-img" alt="Final character design 2">
+      </div>
+
+      <!-- ROW 2 -->
+      <div class="col-12 col-md-6">
+        <img src="moth2.png" class="final-img" alt="Final character design 3">
+      </div>
+
+      <div class="col-12 col-md-6">
+        <img src="moth3.png" class="final-img" alt="Final character design 4">
+      </div>
+
+      <!-- ROW 3 -->
+      <div class="col-12 col-md-6">
+        <img src="moth4.png" class="final-img" alt="Final character design 5">
+      </div>
+
+      <div class="col-12 col-md-6">
+        <img src="moth5.png" class="final-img" alt="Final character design 6">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- REFLECTION -->
+<section class="section-padding">
+  <div class="container">
+    <h2 class="fw-semibold mb-3">Reflection</h2>
+    <p>
+      While developing this humanistic character family,
+       I realised how observation plays a key role in design
+        and also how it informs the emotional resonance of a character.
+    </p>
+  </div>
+</section>
+
+<footer class="py-4 border-top">
+  <div class="container text-center small text-secondary">
+    Meenakshi Suresh Kumar · 2026
+  </div>
+</footer>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- DARK MODE -->
+<script>
+  const toggle = document.getElementById('themeToggle');
+  const html = document.documentElement;
+
+  toggle.addEventListener('click', () => {
+    html.setAttribute(
+      'data-bs-theme',
+      html.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark'
+    );
+  });
+</script>
+
+</body>
+</html>
