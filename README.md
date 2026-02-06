@@ -21,7 +21,7 @@ I’m currently building a solid foundation in design disciplines and exploring 
 - Branding & Identity  
 - UI/UX Design :contentReference[oaicite:2]{index=2}
 
-### 🛠 Software Skills
+###  Software Skills
 - Adobe Illustrator  
 - Adobe Photoshop  
 - Adobe InDesign  
