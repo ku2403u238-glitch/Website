@@ -48,6 +48,9 @@
 
 
 <body class="bg-body text-body"> 
+  <div class="custom-cursor"></div>
+
+
 
   
   <!-- ================= PROJECT MODAL ================= -->
@@ -181,8 +184,8 @@
         <div class="skill-item">Adobe Illustrator</div>
         <div class="skill-item">Adobe Photoshop</div>
         <div class="skill-item">Adobe InDesign</div>
-        <div class="skill-item">Fresco</div>
-        <div class="skill-item">Figma</div>
+        <div class="skill-item">Adobe After Effects</div>
+        <div class="skill-item">Adobe Fresco</div>
         <div class="skill-item">HTML</div>
         <div class="skill-item">CSS</div>
       </div>
@@ -400,6 +403,15 @@
   });
 </script>
 
+<script>
+const cursor = document.querySelector('.custom-cursor');
+
+document.addEventListener('mousemove', e => {
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+});
+</script>
+
 
 <!-- ================= DARK MODE SCRIPT ================= -->
 <script>
@@ -416,4 +428,5 @@
 </script>
 
 </body>
+
 </html>
