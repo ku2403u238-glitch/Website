@@ -187,6 +187,21 @@ document.addEventListener('mousemove', e => {
   cursor.style.left = e.clientX + 'px';
   cursor.style.top = e.clientY + 'px';
 });
+
+/* detect clickable elements */
+const clickable = document.querySelectorAll(
+  'a, button, .card, .nav-link, .contact-icon'
+);
+
+clickable.forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursor.classList.add('cursor-hover');
+  });
+
+  el.addEventListener('mouseleave', () => {
+    cursor.classList.remove('cursor-hover');
+  });
+});
 </script>
 
 </body>
